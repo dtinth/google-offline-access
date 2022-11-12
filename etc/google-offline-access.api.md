@@ -6,36 +6,25 @@
 
 import { OAuth2Client } from 'google-auth-library';
 
-// @public (undocumented)
+// @public
 export class GoogleOfflineAccess {
     constructor(options: GoogleOfflineAccessOptions);
-    // (undocumented)
-    authStateFile: string;
-    // (undocumented)
+    authStateFile?: string | false;
     clientSecretFile: string;
-    // (undocumented)
     defaultRefreshToken?: string;
-    // (undocumented)
     getAuthenticatedAuthClient(): Promise<OAuth2Client>;
-    // (undocumented)
     getAuthUrl(): Promise<string>;
-    // (undocumented)
     log: (message: string) => void;
-    // (undocumented)
+    login(code: string): Promise<void>;
     scopes: string[];
 }
 
-// @public (undocumented)
+// @public
 export interface GoogleOfflineAccessOptions {
-    // (undocumented)
-    accessTokenFile?: string;
-    // (undocumented)
+    authStateFile?: string | false;
     clientSecretFile?: string;
-    // (undocumented)
     defaultRefreshToken?: string;
-    // (undocumented)
     log?: (message: string) => void;
-    // (undocumented)
     scopes: string[];
 }
 
