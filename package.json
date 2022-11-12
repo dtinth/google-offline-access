@@ -20,11 +20,12 @@
     "url": "https://github.com/dtinth/google-offline-access/issues"
   },
   "devDependencies": {
+    "@changesets/cli": "2.25.0",
     "@rushstack/heft": "0.48.7",
     "@rushstack/heft-web-rig": "0.12.10",
     "@types/heft-jest": "1.0.3",
-    "prettier": "2.7.1",
-    "@changesets/cli": "2.25.0"
+    "google-auth-library": "^8.7.0",
+    "prettier": "2.7.1"
   },
   "scripts": {
     "build": "heft build",
