@@ -6,6 +6,7 @@ specifiers:
   '@rushstack/heft-web-rig': 0.12.10
   '@types/heft-jest': 1.0.3
   google-auth-library: ^8.7.0
+  googleapis: ^109.0.1
   prettier: 2.7.1
   tsx: ^3.12.0
 
@@ -15,6 +16,7 @@ devDependencies:
   '@rushstack/heft-web-rig': 0.12.10_@rushstack+heft@0.48.7
   '@types/heft-jest': 1.0.3
   google-auth-library: 8.7.0
+  googleapis: 109.0.1
   prettier: 2.7.1
   tsx: 3.12.0
 
@@ -3688,6 +3690,32 @@ packages:
       node-forge: 1.3.1
     dev: true
 
+  /googleapis-common/6.0.3:
+    resolution: {integrity: sha512-Xyb4FsQ6PQDu4tAE/M/ev4yzZhFe2Gc7+rKmuCX2ZGk1ajBKbafsGlVYpmzGqQOT93BRDe8DiTmQb6YSkbICrA==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      extend: 3.0.2
+      gaxios: 5.0.2
+      google-auth-library: 8.7.0
+      qs: 6.11.0
+      url-template: 2.0.8
+      uuid: 9.0.0
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
+  /googleapis/109.0.1:
+    resolution: {integrity: sha512-x286OtNu0ngzxfGz2XgRs4aMhrwutRCkCE12dh2M1jIZOpOndB7ELFXEhmtxaJ7z3257flKIbiiCJZeBO+ze/Q==}
+    engines: {node: '>=12.0.0'}
+    dependencies:
+      google-auth-library: 8.7.0
+      googleapis-common: 6.0.3
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+    dev: true
+
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     dev: true
@@ -7177,6 +7205,10 @@ packages:
       requires-port: 1.0.0
     dev: true
 
+  /url-template/2.0.8:
+    resolution: {integrity: sha512-XdVKMF4SJ0nP/O7XIPB0JwAEuT9lDIYnNsK8yGVe43y0AWoKeJNdv3ZNWh7ksJ6KqQFjOO6ox/VEitLnaVNufw==}
+    dev: true
+
   /util-deprecate/1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
@@ -7192,6 +7224,11 @@ packages:
 
   /uuid/8.3.2:
     resolution: {integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==}
+    hasBin: true
+    dev: true
+
+  /uuid/9.0.0:
+    resolution: {integrity: sha512-MXcSTerfPa4uqyzStbRoTgt5XIe3x5+42+q1sDuy3R5MDk66URdLMOZe5aPX/SQd+kuYAh0FdP/pO28IkQyTeg==}
     hasBin: true
     dev: true
 
