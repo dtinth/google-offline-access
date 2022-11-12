@@ -25,7 +25,8 @@
     "@rushstack/heft-web-rig": "0.12.10",
     "@types/heft-jest": "1.0.3",
     "google-auth-library": "^8.7.0",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "tsx": "^3.12.0"
   },
   "scripts": {
     "build": "heft build",
